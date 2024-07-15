@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível 1: Identificação de Definições e Usos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Nível 1: Identificação de Definições e Usos</h1>
+    <p>Identifique as definições e os usos das variáveis no código abaixo:</p>
+    <pre>
+def calculate_total(price, tax):
+    total = price + (price * tax)  # Definição de 'total'
+    return total  # Uso de 'total'
+
+def main():
+    price = 100  # Definição de 'price'
+    tax = 0.05  # Definição de 'tax'
+    result = calculate_total(price, tax)  # Uso de 'price' e 'tax'
+    print(result)  # Uso de 'result'
+
+main()
+    </pre>
+    <form id="nivel1Form">
+        <label for="definicoes">Definições:</label>
+        <input type="text" id="definicoes" name="definicoes" placeholder="Ex: total = price + (price * tax), ...">
+        <label for="usos">Usos:</label>
+        <input type="text" id="usos" name="usos" placeholder="Ex: return total, ...">
+        <button type="button" onclick="verificarNivel1()">Verificar Respostas</button>
+    </form>
+    <div id="feedbackNivel1"></div>
+    <script src="js/nivel1.js"></script>
+</body>
+</html>
