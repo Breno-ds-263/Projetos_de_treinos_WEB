@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível 2: Aplicação de Critérios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Nível 2: Aplicação de Critérios</h1>
+    <p>Aplique os critérios de fluxo de dados no código abaixo:</p>
+    <pre>
+def calculate_total(price, tax):
+    total = price + (price * tax)  # Definição de 'total'
+    return total  # Uso de 'total'
+
+def main():
+    price = 100  # Definição de 'price'
+    tax = 0.05  # Definição de 'tax'
+    result = calculate_total(price, tax)  # Uso de 'price' e 'tax'
+    print(result)  # Uso de 'result'
+
+main()
+    </pre>
+    <form id="nivel2Form">
+        <label for="criterio">Escolha um critério:</label>
+        <select id="criterio" name="criterio">
+            <option value="def-use">Def-Use</option>
+            <option value="all-definitions">All-definitions</option>
+            <option value="all-uses">All-uses</option>
+        </select>
+        <label for="analise">Análise:</label>
+        <textarea id="analise" name="analise" placeholder="Descreva como o critério se aplica ao código"></textarea>
+        <button type="button" onclick="verificarNivel2()">Verificar Respostas</button>
+    </form>
+    <div id="feedbackNivel2"></div>
+    <script src="js/nivel2.js"></script>
+</body>
+</html>
